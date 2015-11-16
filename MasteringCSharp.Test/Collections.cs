@@ -36,7 +36,39 @@ namespace MasteringCSharp.Test
                 Console.WriteLine(tmp);
 
             }
-
 	    }
+
+        [Test]
+        public void ListBasics()
+        {
+            List<string> names = new List<string>();
+            names.Add("Fred");
+            Assert.AreEqual("Fred", names[0]);
+        }
+
+        [Test]
+        public void Generics()
+        {
+            Fred<string> fred = new Fred<string>("Hi");
+            Assert.AreEqual("Hi", fred.Foo() );
+
+            Fred<int> fred2 = new Fred<int>(100);
+            Assert.AreEqual(100, fred2.Foo());
+        }
+
+        public class Fred<T>
+        {
+            T _greeting;
+
+            public Fred(T greeting)
+            {
+                this._greeting = greeting;
+            }
+
+            public T Foo()
+            {
+                return _greeting;
+            }  
+        }
     }
 }
