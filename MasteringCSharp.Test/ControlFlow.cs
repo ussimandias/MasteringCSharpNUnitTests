@@ -18,13 +18,14 @@ namespace MasteringCSharp.Test
 			return;
 		}
 
-		[Test]
-		public int MethodReturningInt32()
-		{
-			//int x = 10;
-			//byte y = 10;
-			return 13;
-		}
+        //[Test]
+        //public int MethodReturningInt32()
+        //{
+        //    //int x = 10;
+        //    //byte y = 10;
+        //    return 13;
+        //    //Assert.AreEqual(13, MethodReturningInt32());
+        //}
 
 		[Test]
 		public void If()

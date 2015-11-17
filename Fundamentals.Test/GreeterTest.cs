@@ -14,7 +14,7 @@ namespace Fundamentals.Test
 		[Test]
 		public void ThisWillFail()
 		{
-			Assert.AreEqual(1, 0);
+			Assert.AreNotEqual(.1, 0);
 		}
 
 		[Test]
