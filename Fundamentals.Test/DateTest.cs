@@ -14,8 +14,8 @@ namespace Fundamentals.Test
         public void TimeSpanUsage()
         {
             //System.TimeSpan (.NET 1.0)
-            TimeSpan ts = new TimeSpan();
-            TimeSpan fiveSeconds= TimeSpan.FromMinutes(5);
+            //TimeSpan ts = new TimeSpan();
+            TimeSpan fiveSeconds= TimeSpan.FromSeconds(5);
             TimeSpan halfMinute = TimeSpan.FromMinutes(.5);
 
             Assert.AreEqual(TimeSpan.FromMilliseconds(35000), fiveSeconds + halfMinute);

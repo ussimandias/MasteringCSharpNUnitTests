@@ -60,9 +60,10 @@ namespace Fundamentals.Test
         [Test]
         public void SpeakerProperty_IsWritable()
         {
-            Greeter greeter = new Greeter("Rob");
+            Greeter greeter = new Greeter("Tom");
 	        //greeter.Speaker = "Tom";
             Assert.AreEqual("Tom", greeter.Speaker);
+
 	        string greeting = greeter.SayHello2("Jon");
             Assert.AreEqual("Tom", greeter.Speaker);
             Assert.AreEqual("Hello Jon from Tom", greeting);

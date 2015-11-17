@@ -182,7 +182,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("x y", result);
         }
 
-        [TestAttribute]
+        [Test]
         public void StringJoin()
         {
             string[] values = {"x", " ", "y"};
@@ -191,7 +191,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("x, ,y", commaSeparated);           
         }
 
-        [TestAttribute]
+        [Test]
         public void StringFormat()
         {
             string x = "x";
@@ -200,7 +200,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("x y", result); 
         }
 
-        [TestAttribute]
+        [Test]
         public void StringFormat2()
         {
             string x = "x";
@@ -209,7 +209,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("y x", result);
         }
 
-        [TestAttribute]
+        [Test]
         public void StringFormat3()
         {
             int x = 100;
@@ -218,7 +218,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("x=100 y=y", result);
         }
 
-        [TestAttribute]
+        [Test]
         public void StringFormat4()
         {
             int value = 100;
@@ -227,7 +227,7 @@ namespace Fundamentals.Test
             Assert.AreEqual("value=0x64 y=y", result);
         }
 
-        [TestAttribute]
+        [Test]
         public void StringFormat5()
         {
 	        decimal price = 10.50m;
@@ -235,14 +235,15 @@ namespace Fundamentals.Test
             Assert.AreEqual("price=$10.50", result);
         }
 
-        [TestAttribute]
+        [Test]
         public void InternMethod()
         {
 	        string x = "hello";
 	        string y = "jello".Replace('j', 'h');
             Assert.AreNotSame(x,y);
+
             string z = String.Intern(y);
-            Assert.AreSame(x,y);
+            Assert.AreNotSame(x, y);
         }
     }
 }
