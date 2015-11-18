@@ -42,10 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
+    <Compile Include="Chainsaw.cs" />
     <Compile Include="Dancer.cs" />
     <Compile Include="DerivedClass.cs" />
+    <Compile Include="IControllable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartAndStopper.cs" />
     <Compile Include="StreamSummer.cs" />
     <Compile Include="TapDancer.cs" />
   </ItemGroup>

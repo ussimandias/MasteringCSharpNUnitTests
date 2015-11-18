@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MasteringCSharp
 {
-    public abstract class Dancer
+    public abstract class Dancer : IControllable
     {
         private readonly string name;
         public string Name { get { return name; } }
@@ -17,6 +17,16 @@ namespace MasteringCSharp
         }
 
         public abstract void Dance();
+
+        public void Start()
+        {
+            Console.WriteLine("Starting dancing");
+        }
+
+        public void Stop()
+        {
+            Console.WriteLine("Stopped dancing");
+        }
 
         public void DanceTwice()
         {

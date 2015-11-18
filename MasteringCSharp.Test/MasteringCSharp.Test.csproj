@@ -49,6 +49,7 @@
     <Compile Include="DerivedClassTest.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartAndStopTest.cs" />
     <Compile Include="StreamSummerTest.cs" />
     <Compile Include="TapDancerTest.cs" />
   </ItemGroup>
