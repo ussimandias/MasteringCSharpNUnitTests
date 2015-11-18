@@ -44,6 +44,7 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="Chainsaw.cs" />
     <Compile Include="Dancer.cs" />
+    <Compile Include="Delegates.cs" />
     <Compile Include="DerivedClass.cs" />
     <Compile Include="IControllable.cs" />
     <Compile Include="Program.cs" />

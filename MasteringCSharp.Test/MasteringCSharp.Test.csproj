@@ -46,6 +46,7 @@
     <Compile Include="BaseClassTest.cs" />
     <Compile Include="Collections.cs" />
     <Compile Include="ControlFlow.cs" />
+    <Compile Include="DelegatesTest.cs" />
     <Compile Include="DerivedClassTest.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
